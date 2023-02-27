@@ -1,0 +1,343 @@
+int a=0;
+char array[100];
+int i;
+
+void setup(){
+  Serial.begin(9600);
+  pinMode(2,INPUT);
+  pinMode(3,INPUT);
+  pinMode(4,INPUT);
+  pinMode(5,INPUT);
+  pinMode(6,INPUT);
+  pinMode(7,INPUT);
+  
+ 
+}
+void loop()
+{
+  int i=digitalRead(2);  //switch 1
+  int j=digitalRead(3);  //switch 2
+  int k=digitalRead(4);  //switch 3
+  int l=digitalRead(5);  //switch 4
+  int m=digitalRead(6);  //switch 5
+  int n=digitalRead(7);  //switch 6
+  
+
+ 
+  {
+    if(i==HIGH&&j==LOW&&k==LOW&&l==LOW&&m==LOW&&n==LOW)
+    {
+      array[a]='A';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==LOW&&l==LOW&&m==LOW&&n==LOW)
+    {
+      Serial.println(" ");
+      a=a-1;
+      for(i=0;i<a;i=i+1){
+      
+      Serial.print(array[i]);
+     
+        delay(250);}
+
+
+    }
+    else
+    if(i==HIGH&&j==LOW&&k==LOW&&l==HIGH&&m==LOW&&n==LOW)
+    {
+      array[a]='C';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==LOW&&k==LOW&&l==HIGH&&m==HIGH&&n==LOW)
+    {
+      array[a]='D';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==LOW&&k==LOW&&l==LOW&&m==HIGH&&n==LOW)
+    {
+      array[a]='E';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==HIGH&&k==LOW&&l==HIGH&&m==LOW&&n==LOW)
+    {
+      array[a]='F';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+    }
+    else
+    if(i==HIGH&&j==HIGH&&k==LOW&&l==HIGH&&m==HIGH&&n==LOW)
+    {
+       array[a]='G';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+    }
+    else
+    if(i==HIGH&&j==HIGH&&k==LOW&&l==LOW&&m==HIGH&&n==LOW)
+    {
+      array[a]='H';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==LOW&&l==HIGH&&m==LOW&&n==LOW)
+    {
+      array[a]='I';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==LOW&&l==HIGH&&m==HIGH&&n==LOW)
+    {
+      array[a]='J';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==LOW&&k==HIGH&&l==LOW&&m==LOW&&n==LOW)
+    {
+      array[a]='K';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+    }
+    else
+    if(i==HIGH&&j==HIGH&&k==HIGH&&l==LOW&&m==LOW&&n==LOW)
+    {
+      array[a]='L';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+    }
+    else
+    if(i==HIGH&&j==LOW&&k==HIGH&&l==HIGH&&m==LOW&&n==LOW)
+    {
+      array[a]='M';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==LOW&&k==HIGH&&l==HIGH&&m==HIGH&&n==LOW)
+    {
+     array[a]='N';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==LOW&&k==HIGH&&l==LOW&&m==HIGH&&n==LOW)
+    {
+      array[a]='O';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==HIGH&&k==HIGH&&l==HIGH&&m==LOW&&n==LOW)
+    {
+      array[a]='P';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==HIGH&&k==HIGH&&l==HIGH&&m==HIGH&&n==LOW)
+    {
+      array[a]='Q';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==HIGH&&k==HIGH&&l==LOW&&m==HIGH&&n==LOW)
+    {
+      array[a]='R';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==HIGH&&l==HIGH&&m==LOW&&n==LOW)
+    {
+      array[a]='S';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==HIGH&&l==HIGH&&m==HIGH&&n==LOW)
+    {
+     array[a]='T';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==LOW&&k==HIGH&&l==LOW&&m==LOW&&n==HIGH)
+    {
+     array[a]='U';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==HIGH&&j==HIGH&&k==HIGH&&l==LOW&&m==LOW&&n==HIGH)
+    {
+      array[a]='V';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==LOW&&l==HIGH&&m==HIGH&&n==HIGH)
+      {
+        array[a]='W';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+      }
+    else
+    if(i==HIGH&&j==LOW&&k==HIGH&&l==HIGH&&m==LOW&&n==HIGH)
+      {
+       array[a]='X';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+      }
+    else
+    if(i==HIGH&&j==LOW&&k==HIGH&&l==HIGH&&m==HIGH&&n==HIGH)
+      {
+        array[a]='Y';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+   
+      }
+    else
+    if(i==HIGH&&j==LOW&&k==HIGH&&l==LOW&&m==HIGH&&n==HIGH)
+      {
+        array[a]='Z';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+  
+      }
+     
+    else
+    if(i==LOW&&j==LOW&&k==LOW&&l==HIGH&&m==LOW&&n==LOW)
+    {
+      array[a]=' ';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==LOW&&l==LOW&&m==LOW&&n==LOW) 
+    {
+      array[a]=',';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+       
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==HIGH&&l==LOW&&m==LOW&&n==LOW)
+    {
+      array[a]=';';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+      
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==LOW&&l==LOW&&m==HIGH&&n==LOW)
+    {
+      array[a]=':';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+      
+    } 
+    else
+    if(i==LOW&&j==HIGH&&k==LOW&&l==LOW&&m==HIGH&&n==HIGH)
+    {
+       array[a]='.';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+      
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==HIGH&&l==LOW&&m==LOW&&n==HIGH)
+    {
+      array[a]='?';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+      
+    }
+    else
+    if(i==LOW&&j==HIGH&&k==HIGH&&l==LOW&&m==HIGH&&n==LOW)
+    {
+      array[a]='!';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+      
+    }
+    else
+    if(i==LOW&&j==HIGH && k==LOW && l==LOW && m==LOW && n==LOW)
+    {
+      array[a]='B';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+     
+    }
+    else
+    if(i==LOW && j==LOW && k==HIGH && l==LOW && m==LOW && n==HIGH)
+    {
+      array[a]='-';
+      Serial.print(array[a]);
+      a = a+1;
+      delay(400);
+      
+    }
+  }
+ 
+}
